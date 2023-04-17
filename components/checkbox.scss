@@ -1,0 +1,38 @@
+.checkbox {
+  display: flex;
+  background: none;
+  border: none;
+  font-size: 2rem;
+
+  svg {
+    width: 2rem;
+    margin-right: 0.5rem;
+
+    rect {
+      fill: none;
+      stroke: $color-neutral;
+      stroke-width: 5px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    svg rect {
+      stroke: $color-dark;
+    }
+  }
+
+  &-red svg rect {
+    fill: $color-light-red;
+  }
+  &-green svg rect {
+    fill: $color-light-green;
+  }
+  &-blue svg rect {
+    fill: $color-light-blue;
+  }
+  &-yellow svg rect {
+    fill: $color-light-yellow;
+  }
+}
